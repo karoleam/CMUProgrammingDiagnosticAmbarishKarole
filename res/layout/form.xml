@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/grey" />
+
+    <EditText
+        android:id="@+id/etDepartureCity"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="Leaving from....."
+        android:textSize="20px" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/bSubmit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Submit"
+        android:textColor="#d2cab4" />
+
+    <Spinner
+        android:id="@+id/spinnerDepartureMonths"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/spinnerReturnMonths"
+        android:layout_below="@+id/etDepartureCity"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:prompt="@string/select_month"
+        android:textSize="5px" />
+
+    <Spinner
+        android:id="@+id/spinnerDepartureYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinnerDepartureTime"
+        android:layout_alignParentRight="true"
+        android:prompt="@string/select_year"
+        android:textSize="5px" />
+
+    <Spinner
+        android:id="@+id/spinnerPassengerNo"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bSubmit"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/textView1"
+        android:gravity="center"
+        android:prompt="@string/select_passenger_no"
+        android:textSize="5px" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinnerPassengerNo"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="18dp"
+        android:text="Passengers:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#d2cab4" />
+
+    <TextView
+        android:id="@+id/TextDeparture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etDepartureCity"
+        android:layout_alignBottom="@+id/etDepartureCity"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/spinnerDepartureYear"
+        android:ems="10"
+        android:text="From:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#d2cab4" />
+
+    <TextView
+        android:id="@+id/textTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etDestinationCity"
+        android:layout_alignBottom="@+id/etDestinationCity"
+        android:layout_alignRight="@+id/spinnerDepartureDays"
+        android:ems="10"
+        android:text="To:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#d2cab4" />
+
+    <Spinner
+        android:id="@+id/spinnerReturnTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinnerPassengerNo"
+        android:layout_alignLeft="@+id/spinnerDepartureTime"
+        android:layout_alignParentRight="true"
+        android:prompt="@string/select_time"
+        android:textSize="5px" />
+
+    <Spinner
+        android:id="@+id/spinnerReturnDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/spinnerReturnMonths"
+        android:layout_toLeftOf="@+id/spinnerReturnYear"
+        android:prompt="@string/select_day"
+        android:textSize="5px" />
+
+    <Spinner
+        android:id="@+id/spinnerReturnYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/spinnerReturnMonths"
+        android:layout_toRightOf="@+id/spinnerDepartureDays"
+        android:prompt="@string/select_year"
+        android:textSize="5px" />
+
+    <Spinner
+        android:id="@+id/spinnerReturnMonths"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinnerReturnTime"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:prompt="@string/select_month"
+        android:textSize="5px" />
+
+    <Spinner
+        android:id="@+id/spinnerDepartureTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/spinnerDepartureMonths"
+        android:layout_toRightOf="@+id/textView2"
+        android:prompt="@string/select_time"
+        android:textSize="5px" />
+
+    <Spinner
+        android:id="@+id/spinnerDepartureDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/spinnerDepartureYear"
+        android:layout_toLeftOf="@+id/spinnerDepartureYear"
+        android:prompt="@string/select_day"
+        android:textSize="14pt"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinnerDepartureDays"
+        android:layout_alignParentLeft="true"
+        android:text="Departure Date:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#d2cab4" />
+
+    <EditText
+        android:id="@+id/etDestinationCity"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etDepartureCity"
+        android:ems="10"
+        android:hint="Going to....."
+        android:textSize="20px" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinnerReturnMonths"
+        android:layout_alignParentLeft="true"
+        android:text="Return Date:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#d2cab4" />
+
+</RelativeLayout>

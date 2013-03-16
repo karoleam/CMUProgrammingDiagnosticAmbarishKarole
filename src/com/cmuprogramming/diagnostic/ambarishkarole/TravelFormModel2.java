@@ -3,7 +3,7 @@ package com.cmuprogramming.diagnostic.ambarishkarole;
 
 import java.util.ArrayList;
 
-public class Model2 {//Business rules are implemented in this class and this Model class stores (in an Arraylist of correct Itinerary objects) the data entered into the form by the user
+public class TravelFormModel2 {//Business rules are implemented in this class and this Model class stores (in an Arraylist of correct Itinerary objects) the data entered into the form by the user
 
 	String displayText;
 	DateCheck dateCheckObj = new DateCheck();

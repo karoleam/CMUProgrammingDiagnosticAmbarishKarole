@@ -4,7 +4,7 @@ package com.cmuprogramming.diagnostic.ambarishkarole;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Model1 { //this Model class defines the values for the combo boxes/spinners/ drop-down boxes
+public class TravelFormModel1 { //this Model class defines the values for the combo boxes/spinners/ drop-down boxes
 	String textInput;
 	
 	List<String> listMonths = new ArrayList<String>();
@@ -14,7 +14,7 @@ public class Model1 { //this Model class defines the values for the combo boxes/
 	List<String> listPassengersNo = new ArrayList<String>();
 	
 
-	public Model1() {
+	public TravelFormModel1() {
 
 		listMonths.add("Month");		//Month data for the drop-down/spinner box
 		listMonths.add("January");

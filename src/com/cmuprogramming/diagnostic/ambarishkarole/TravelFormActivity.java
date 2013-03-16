@@ -14,8 +14,8 @@ public class TravelFormActivity extends Activity {
 		{
 			super.onCreate(savedInstanceState);
 			setContentView(R.layout.main);
-			final Model1 myModel1 = new Model1();
-			final Model2 myModel2 = new Model2();
+			final TravelFormModel1 myModel1 = new TravelFormModel1();
+			final TravelFormModel2 myModel2 = new TravelFormModel2();
 			final TravelFormView travelFormViewObj = new TravelFormView(this);
 		    TravelFormController travelFormControllerObj = new TravelFormController(this, myModel1, myModel2, travelFormViewObj);
 		    ViewGroup container = (ViewGroup) findViewById(R.id.homeLayout);

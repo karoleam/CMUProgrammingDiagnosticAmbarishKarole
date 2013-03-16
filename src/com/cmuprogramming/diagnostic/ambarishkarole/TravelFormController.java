@@ -17,7 +17,7 @@ import android.widget.Spinner;
 class TravelFormController extends LinearLayout {
 
 	
-	public TravelFormController(Activity activity, final Model1 myModel1, final Model2 myModel2, final TravelFormView myView) {
+	public TravelFormController(Activity activity, final TravelFormModel1 myModel1, final TravelFormModel2 myModel2, final TravelFormView myView) {
 		super(activity, null);
 		LayoutInflater layoutInflater = (LayoutInflater)activity.getSystemService(Context.LAYOUT_INFLATER_SERVICE); 
 		View viewObj = layoutInflater.inflate(R.layout.form, this); // the form layout is inflated dynamically here 

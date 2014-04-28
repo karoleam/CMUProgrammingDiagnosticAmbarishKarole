@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-
+//testing now
 public class DateCheck {
 
 	public boolean isDateValid(String dateToCheck) { //method to check if a date is valid
